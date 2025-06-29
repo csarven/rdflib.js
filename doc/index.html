@@ -1,0 +1,60 @@
+<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>rdflib</title><meta name="description" content="Documentation for rdflib"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script defer src="assets/main.js"></script><script async src="assets/icons.js" id="tsd-icons-script"></script><script async src="assets/search.js" id="tsd-search-script"></script><script async src="assets/navigation.js" id="tsd-nav-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os";document.body.style.display="none";setTimeout(() => app?app.showPage():document.body.style.removeProperty("display"),500)</script><header class="tsd-page-toolbar"><div class="tsd-toolbar-contents container"><div class="table-cell" id="tsd-search" data-base="."><div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="assets/icons.svg#icon-search"></use></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div><div class="field"><div id="tsd-toolbar-links"></div></div><ul class="results"><li class="state loading">Preparing search index...</li><li class="state failure">The search index is not available</li></ul><a href="index.html" class="title">rdflib</a></div><div class="table-cell" id="tsd-widgets"><a href="#" class="tsd-widget tsd-toolbar-icon menu no-caption" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="assets/icons.svg#icon-menu"></use></svg></a></div></div></header><div class="container container-main"><div class="col-content"><div class="tsd-page-title"><h2>rdflib</h2></div><div class="tsd-panel tsd-typography"><a id="md:rdflibjs" class="tsd-anchor"></a><h1><a href="#md:rdflibjs">rdflib.js</a></h1><p><a href="https://npm.im/rdflib"><img src="https://img.shields.io/npm/v/rdflib.svg?style=flat" alt="NPM Version"></a>
+<a href="https://gitter.im/linkeddata/rdflib.js?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge"><img src="https://badges.gitter.im/Join%20Chat.svg" alt="Join the chat at https://gitter.im/linkeddata/rdflib.js"></a></p>
+<p>Javascript RDF library for browsers and Node.js.</p>
+<ul>
+<li>Reads and writes RDF/XML, Turtle and N3; Reads RDFa and JSON-LD</li>
+<li>Read/Write Linked Data client, using WebDav or SPARQL/Update</li>
+<li>Real-Time Collaborative editing with web sockets and PATCHes</li>
+<li>Local API for querying a store</li>
+<li>Compatible with <a href="https://github.com/rdfjs/representation-task-force/blob/master/interface-spec.md">RDFJS task force spec</a></li>
+<li>SPARQL queries (not full SPARQL - just graph match and optional)</li>
+<li>Smushing of nodes from <code>owl:sameAs</code>, and <code>owl:{f,inverseF}unctionProperty</code></li>
+<li>Tracks provenance of triples keeps metadata (in RDF) from HTTP accesses</li>
+</ul>
+<a id="md:documentation" class="tsd-anchor"></a><h2><a href="#md:documentation">Documentation</a></h2><p>See:</p>
+<ul>
+<li><p>The <a href="https://linkeddata.github.io/rdflib.js/doc/">API documentation</a> is partial but useful</p>
+</li>
+<li><p><a href="https://linkeddata.github.io/rdflib.js/Documentation/webapp-intro.html">Tutorial: Using rdflib in a Solid web app</a></p>
+</li>
+<li><p><a href="https://github.com/solidos/solid-tutorial-rdflib.js">Tutorial: Using rdflib.js</a></p>
+</li>
+<li><p><a href="https://linkeddata.github.io/rdflib.js/Documentation/turtle-intro.html">Tutorial: Using Turtle</a></p>
+</li>
+<li><p><a href="https://linkeddata.github.io/rdflib.js/Documentation/alternate-fetches.md">Using authenticated &amp; alternate fetch methods</a></p>
+</li>
+<li><p><a href="https://linkeddata.github.io/rdflib.js/Documentation/diagrams/rdflib-block-diagram.svg">Block diagram: rdflib modules</a></p>
+</li>
+<li><p><a href="https://linkeddata.github.io/rdflib.js/Documentation/diagrams/fetcher-block-diagram.svg">Block diagram: The Fetcher</a></p>
+</li>
+<li><p><a href="https://linkeddata.github.io/rdflib.js/Documentation/diagrams/fetcher-block-diagram-2.svg">Block diagram: The Fetcher - handling retries</a></p>
+</li>
+<li><p><a href="https://linkeddata.github.io/rdflib.js/Documentation/diagrams/update-manager-diagram.svg">Block diagram: The Update Manager</a></p>
+</li>
+<li><p><a href="https://solid.inrupt.com/">The Solid developer portal at Inrupt</a></p>
+</li>
+</ul>
+<p>for more information.</p>
+<a id="md:install" class="tsd-anchor"></a><h2><a href="#md:install">Install</a></h2><a id="md:browser-using-a-bundler-like-webpack" class="tsd-anchor"></a><h4><a href="#md:browser-using-a-bundler-like-webpack">Browser (using a bundler like Webpack)</a></h4><pre><code class="language-bash"><span class="hl-0">npm</span><span class="hl-1"> </span><span class="hl-2">install</span><span class="hl-1"> </span><span class="hl-2">rdflib</span>
+</code><button>Copy</button></pre>
+<a id="md:browser-generating-a-ltscriptgt-file-to-include" class="tsd-anchor"></a><h4><a href="#md:browser-generating-a-ltscriptgt-file-to-include">Browser (generating a <code>&lt;script&gt;</code> file to include)</a></h4><pre><code class="language-bash"><span class="hl-0">git</span><span class="hl-1"> </span><span class="hl-2">clone</span><span class="hl-1"> </span><span class="hl-2">git@github.com:linkeddata/rdflib.js.git</span><span class="hl-1">;</span><br/><span class="hl-0">cd</span><span class="hl-1"> </span><span class="hl-2">rdflib.js</span><span class="hl-1">;</span><br/><span class="hl-0">npm</span><span class="hl-1"> </span><span class="hl-2">install</span><span class="hl-1">;</span>
+</code><button>Copy</button></pre>
+<p>Generate the dist directory</p>
+<pre><code class="language-bash"><span class="hl-0">npm</span><span class="hl-1"> </span><span class="hl-2">run</span><span class="hl-1"> </span><span class="hl-2">build:browser</span>
+</code><button>Copy</button></pre>
+<a id="md:nodejs" class="tsd-anchor"></a><h4><a href="#md:nodejs">Node.js</a></h4><p>Make sure you have Node.js and Node Package Manager (<a href="https://npmjs.org/">npm</a>)
+installed.</p>
+<pre><code class="language-bash"><span class="hl-0">npm</span><span class="hl-1"> </span><span class="hl-2">install</span><span class="hl-1"> </span><span class="hl-3">--save</span><span class="hl-1"> </span><span class="hl-2">rdflib</span>
+</code><button>Copy</button></pre>
+<a id="md:contribute" class="tsd-anchor"></a><h2><a href="#md:contribute">Contribute</a></h2><a id="md:subdirectories" class="tsd-anchor"></a><h4><a href="#md:subdirectories">Subdirectories</a></h4><ul>
+<li><code>dist</code>: Where the bundled libraries are built. Run <code>npm run build</code> to generate them.</li>
+<li><code>test</code>: Tests are here.</li>
+<li><code>lib</code>: Transpiled, non-bundled library is built here when the library is
+published to npm.</li>
+</ul>
+<a id="md:dependencies" class="tsd-anchor"></a><h4><a href="#md:dependencies">Dependencies</a></h4><pre><code><span class="hl-1">- </span><span class="hl-0">XMLHTTPRequest</span><span class="hl-1"> (</span><span class="hl-4">Node</span><span class="hl-1">.</span><span class="hl-4">js</span><span class="hl-1"> </span><span class="hl-4">version</span><span class="hl-1">)</span>
+</code><button>Copy</button></pre>
+<a id="md:thanks" class="tsd-anchor"></a><h2><a href="#md:thanks">Thanks</a></h2><p>Thanks to the many contributors who have been involved along the way.
+LinkedData team &amp; TimBL</p>
+<a id="md:license" class="tsd-anchor"></a><h2><a href="#md:license">LICENSE</a></h2><p>MIT</p>
+</div></div><div class="col-sidebar"><div class="page-menu"><div class="tsd-navigation settings"><details class="tsd-index-accordion"><summary class="tsd-accordion-summary"><h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="assets/icons.svg#icon-chevronDown"></use></svg>Settings</h3></summary><div class="tsd-accordion-details"><div class="tsd-filter-visibility"><h4 class="uppercase">Member Visibility</h4><form><ul id="tsd-filter-options"><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-protected" name="protected"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Protected</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-inherited" name="inherited" checked/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Inherited</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></form></div><div class="tsd-theme-toggle"><h4 class="uppercase">Theme</h4><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div><details open class="tsd-index-accordion tsd-page-navigation"><summary class="tsd-accordion-summary"><h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="assets/icons.svg#icon-chevronDown"></use></svg>On This Page</h3></summary><div class="tsd-accordion-details"><a href="#md:rdflibjs"><span>rdflib.js</span></a><ul><li><a href="#md:documentation"><span>Documentation</span></a></li><li><a href="#md:install"><span>Install</span></a></li><li><ul><li><ul><li><a href="#md:browser-using-a-bundler-like-webpack"><span>Browser (using a bundler like <wbr/>Webpack)</span></a></li><li><a href="#md:browser-generating-a-ltscriptgt-file-to-include"><span>Browser (generating a &lt;script&gt; file to include)</span></a></li><li><a href="#md:nodejs"><span>Node.js</span></a></li></ul></li></ul></li><li><a href="#md:contribute"><span>Contribute</span></a></li><li><ul><li><ul><li><a href="#md:subdirectories"><span>Subdirectories</span></a></li><li><a href="#md:dependencies"><span>Dependencies</span></a></li></ul></li></ul></li><li><a href="#md:thanks"><span>Thanks</span></a></li><li><a href="#md:license"><span>LICENSE</span></a></li></ul></div></details></div><div class="site-menu"><nav class="tsd-navigation"><a href="modules.html" class="current"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="assets/icons.svg#icon-1"></use></svg><span>rdflib</span></a><ul class="tsd-small-nested-navigation" id="tsd-nav-container" data-base="."><li>Loading...</li></ul></nav></div></div></div><footer><p class="tsd-generator">Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></footer><div class="overlay"></div></body></html>
